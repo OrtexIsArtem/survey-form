@@ -26,6 +26,7 @@ const submitForm = e => {
 	}
 }
 
+window.addEventListener('load', Question.renderList)
 form.addEventListener('submit', submitForm)
 input.addEventListener('input', () => {
 	btnSubmit.disabled = !isValid(input.value)
